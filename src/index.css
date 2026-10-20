@@ -1,0 +1,19 @@
+/* Small global rules that sit alongside Material UI. */
+html {
+  scroll-behavior: smooth;
+}
+
+.row-track {
+  scrollbar-width: thin;
+  scrollbar-color: #2b2b33 transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
